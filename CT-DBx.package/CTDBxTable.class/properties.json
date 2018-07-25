@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "RichardPillar 3/22/2018 21:56",
+	"super" : "CTDBx",
+	"category" : "CT-DBx-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CTDBxTable",
+	"type" : "normal"
+}

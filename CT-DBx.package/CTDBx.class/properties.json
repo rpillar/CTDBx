@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "RichardPillar 6/18/2018 21:44",
+	"super" : "Object",
+	"category" : "CT-DBx",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"database",
+		"dbResult",
+		"dbResultset",
+		"dbTableName",
+		"dbSuccess"
+	],
+	"name" : "CTDBx",
+	"type" : "normal"
+}

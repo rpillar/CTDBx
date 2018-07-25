@@ -1,0 +1,31 @@
+{
+	"instance" : {
+		"database:" : "RichardPillar 3/26/2018 18:09",
+		"dbFields" : "RichardPillar 7/6/2018 23:35",
+		"dbResultset:" : "RichardPillar 3/19/2018 08:26",
+		"dbSearch:" : "RichardPillar 7/19/2018 21:02",
+		"dbSearchCount:" : "RichardPillar 7/17/2018 19:12",
+		"initialize" : "RichardPillar 3/26/2018 18:08",
+		"dbUpdate" : "RichardPillar 7/6/2018 23:38",
+		"dbTablePrimaryKey" : "RichardPillar 3/27/2018 22:58",
+		"dbSearchAll" : "RichardPillar 7/24/2018 08:11",
+		"dbResultset" : "RichardPillar 3/19/2018 08:26",
+		"helperCreateUpdateString:" : "RichardPillar 7/21/2018 20:57",
+		"dbSuccess:" : "RichardPillar 7/11/2018 08:31",
+		"parseSearchQueryParams:" : "RichardPillar 7/21/2018 21:12",
+		"processSearchQuery:" : "RichardPillar 7/21/2018 21:06",
+		"dbSearchFirst:" : "RichardPillar 7/17/2018 19:09",
+		"dbUpdate:" : "RichardPillar 7/9/2018 08:44",
+		"dbSuccess" : "RichardPillar 7/11/2018 08:31",
+		"helperCreateValuesString:" : "RichardPillar 7/21/2018 20:58",
+		"dbResult:" : "RichardPillar 7/19/2018 21:23",
+		"dbResult" : "RichardPillar 7/19/2018 21:23",
+		"dbCreateOrUpdate:" : "RichardPillar 7/21/2018 20:57",
+		"database" : "RichardPillar 3/26/2018 18:14",
+		"dbTableName" : "RichardPillar 3/23/2018 20:16",
+		"dbCreate" : "RichardPillar 7/19/2018 20:30",
+		"helperCheckForExistance:" : "RichardPillar 7/21/2018 20:41",
+		"helperCreateFieldsString" : "RichardPillar 7/21/2018 20:58"
+	},
+	"class" : { }
+}

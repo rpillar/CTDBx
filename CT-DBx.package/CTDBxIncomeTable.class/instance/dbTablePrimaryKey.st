@@ -1,0 +1,3 @@
+data
+dbTablePrimaryKey
+	^ 'Date'.

@@ -1,0 +1,3 @@
+accessing
+dbFields
+	self subclassResponsibility.

@@ -1,0 +1,1 @@
+Base class for database tables - provides a standard set of methods.
