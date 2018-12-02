@@ -4,7 +4,7 @@ helperCheckForExistance: primaryKeyValue
 	| queryString |
 
 	queryString := 'select * from ', self dbTableName, ' where ', self dbTablePrimaryKey, '=', primaryKeyValue surroundedBySingleQuotes, ';'.
-	self dbResult: ( self database dbConnection execute: queryString ).
+	self dbResult: ( self conn dbConnection execute: queryString ).
 	
 	^ ( ( self dbResult next ) isNotNil ).
 	

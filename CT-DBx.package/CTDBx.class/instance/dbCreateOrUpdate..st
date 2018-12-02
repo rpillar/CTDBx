@@ -18,4 +18,4 @@ dbCreateOrUpdate: aDataDict
 			queryString := 'insert into ', self dbTableName, ' ', fieldsString, ' values ', valuesString. ].
 
 	"execute query ..."
-	self database dbConnection execute: ( queryString, ';' ).
+	self conn dbConnection execute: ( queryString, ';' ).

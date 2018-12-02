@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CTDBx",
+	"category" : "CT-DBx",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CTDBxResultset",
+	"type" : "normal"
+}

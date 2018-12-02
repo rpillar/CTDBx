@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "RichardPillar 7/24/2018 08:16",
-	"super" : "CTDBx",
+	"super" : "CTDBxResult",
 	"category" : "CT-DBx-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],

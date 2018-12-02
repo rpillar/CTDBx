@@ -7,36 +7,16 @@ parseSearchQueryParams: queryParams
 
 	queryString := WriteStream on: String new. 
 	queryString nextPutAll: ' where '.
-	queryParams do: [ :e |
+	
+	"the <base> query"
+	( queryParams at: 1 ) do: [ :e |
 		( e class = Association ) ifTrue: [
 			k := e key asString.
 			( e value class = Array )
 				ifTrue: [
-					( ( e value ) includes: 'or' ) ifTrue: [ 
-						( e value ) do: [ :x | 
-							( x = 'or' ) 
-								ifTrue: [ 
-									queryString nextPutAll: ' or ' 
-								]
-								ifFalse: [ 
-									queryString nextPutAll: k; 
-									nextPut: $=; 
-									nextPutAll: ( x surroundedBySingleQuotes ) 
-								].
-						] 
-					].
-					( ( e value ) includes: 'like' ) ifTrue: [
-						queryString space;
-						nextPutAll: k;
-						space;
-						nextPutAll: ( ( e value  ) at: 1 );
-						space; 
-						nextPut: $';
-						nextPut: $%;
-						nextPutAll: ( ( e value ) at: 2 );
-						nextPut: $%;
-						nextPut: $'. 
-					].
+					queryString := self parseSearchQueryOrParamOn: e with: k  updating: queryString. 
+					queryString := self parseSearchQueryLikeParamOn: e with: k  updating: queryString.
+					queryString := self parseSearchQueryBetweenParamOn: e with: k  updating: queryString.
 				]
 				ifFalse: [  
 					queryString space;
@@ -47,6 +27,19 @@ parseSearchQueryParams: queryParams
 		]		 
 	]
 	separatedBy: [ queryString nextPutAll: ' and ' ].
+	
+	"the second element will contain things like the <order by> or <limit> keywords"
+	( queryParams size > 1 ) ifTrue: [
+		( queryParams at: 2 ) do: [ :e |
+			( e class = Association ) ifTrue: [
+				k := e key asString.
+				( e value class = Array )
+					ifTrue: [
+						queryString := self parseSearchQueryOrderbyParamOn: e with: k updating: queryString.
+					]
+			]
+		]		 
+	].
 	queryString nextPut: $;.
 		
 	^ queryString contents.

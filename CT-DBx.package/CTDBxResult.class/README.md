@@ -1,0 +1,1 @@
+A CTDBxResult represents (in its table subclass) a single instance of that 'thing' - a 'row'.

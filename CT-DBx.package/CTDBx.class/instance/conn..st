@@ -1,3 +1,3 @@
 accessing
-database: anObject
+conn: anObject
 	database := anObject

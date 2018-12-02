@@ -1,11 +1,17 @@
 accessing - data
-dbUpdate: dataDict
+dbUpdate: aDataDict
 
-	"update based on the state of the current model."
-	| queryString |
+	| queryString updateString |
 	
-	"parse / validate data passed in"
-	queryString := self parseQueryParams: dataDict on: 'update'.
+	"parse data passed in and build query string"
+	updateString := self helperCreateUpdateString: aDataDict. 
+	queryString := 'update ', 
+		self dbTableName, updateString, 
+		' where ', 
+		self dbTablePrimaryKey, 
+		'=', 
+		( aDataDict at: self dbTablePrimaryKey ) 
+		surroundedBySingleQuotes. 
 
 	"execute query ..."
-	self database dbConnection execute: queryString.
+	self conn dbConnection execute: queryString.
