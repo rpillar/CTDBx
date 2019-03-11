@@ -19,3 +19,5 @@ s := q parseSearchQueryParams: {
 }.
 s inspect.
 ```
+
+Additional operators are being added to enable more complex queries to be formed.
