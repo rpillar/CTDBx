@@ -1,8 +1,8 @@
 # CTDBx
 Database interface - written in Pharo.
 
+So this will produce the query string - ""where  name='Richard' and  age='21';"
 ```
-"so that you can do something like this to produce -> "where  name='Richard' and  age='21';"
 | q s |
 q := CTDBxQuery new.
 s := q parseSearchQueryParams: { { #name -> 'Richard' . #age -> 21 } }.
