@@ -1,3 +1,3 @@
 accessing
 dbTableName
-	^ 'user'.
+	self subclassResponsibility.

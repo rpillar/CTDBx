@@ -1,3 +1,3 @@
 accessing
-dbFields
+dbPrimaryKey
 	self subclassResponsibility.

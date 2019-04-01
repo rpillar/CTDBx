@@ -7,7 +7,7 @@ parseSearchQueryParams: queryParams
 
 	queryString := WriteStream on: String new. 
 	queryString nextPutAll: ' where '.
-	
+
 	"the <base> query"
 	( queryParams at: 1 ) do: [ :e |
 		( e class = Association ) ifTrue: [

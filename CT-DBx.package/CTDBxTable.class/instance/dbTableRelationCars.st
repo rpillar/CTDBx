@@ -1,3 +1,0 @@
-accessing
-dbTableRelationCars
-	^ 'userName'.

@@ -1,3 +1,3 @@
-as yet unclassified
-dbFields
+accessing
+dbTableRelations
 	self subclassResponsibility.

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "CTDBx",
+	"super" : "Object",
 	"category" : "CT-DBx",
 	"classinstvars" : [ ],
 	"pools" : [ ],

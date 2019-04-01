@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "RichardPillar 3/22/2018 21:56",
-	"super" : "CTDBx",
-	"category" : "CT-DBx-Examples",
+	"super" : "Object",
+	"category" : "CT-DBx",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

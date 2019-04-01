@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "RichardaPillar 3/30/2019 19:12",
+	"super" : "Object",
+	"category" : "CT-DBx",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"queryString",
+		"queryTable"
+	],
+	"name" : "CTDBxQuery",
+	"type" : "normal"
+}
