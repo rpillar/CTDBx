@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"dbTableName" : "RichardPillar 7/19/2018 21:21",
+		"dbTableName" : "RichardaPillar 3/20/2019 16:50",
 		"initialize" : "RichardPillar 7/6/2018 23:32",
-		"dbTableRelationCars" : "RichardPillar 10/30/2018 08:43",
-		"dbFields" : "RichardPillar 7/19/2018 22:04",
-		"dbTablePrimaryKey" : "RichardPillar 3/27/2018 22:59"
+		"dbTableRelations" : "RichardaPillar 3/20/2019 16:50",
+		"dbFields" : "RichardaPillar 3/20/2019 16:49",
+		"dbPrimaryKey" : "RichardaPillar 3/20/2019 16:50"
 	},
 	"class" : { }
 }

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "RichardPillar 11/19/2018 22:56",
-	"super" : "CTDBx",
+	"super" : "Object",
 	"category" : "CT-DBx",
 	"classinstvars" : [ ],
 	"pools" : [ ],
