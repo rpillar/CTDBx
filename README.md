@@ -19,5 +19,12 @@ s := q parseSearchQueryParams: {
 }.
 s inspect.
 ```
+To add a `limit` :-
+```
+q := CTDBxQuery new.
+q queryTable: 'CTDBxTableCars'.
+q dbSearch: { { #name -> 'Richard' . #age -> 21 } . { #name -> #( #orderby desc ) . #limit -> 1 } }.
+q inspect.
+```
 
 Additional operators are being added to enable more complex queries to be formed.
