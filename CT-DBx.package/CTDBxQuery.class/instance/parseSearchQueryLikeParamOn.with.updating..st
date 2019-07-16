@@ -1,8 +1,8 @@
 initialization
-parseSearchQueryLikeParamOn: e with: key updating: queryString
+parseSearchQueryLikeParamOn: e with: key updating: whereString
 
 	( ( e value first ) = #like ) ifTrue: [
-		queryString space;
+		whereString space;
 			nextPutAll: key;
 			space;
 			nextPutAll: ' like ';
@@ -14,4 +14,4 @@ parseSearchQueryLikeParamOn: e with: key updating: queryString
 			nextPut: $'. 
 	].
 
-	^ queryString. 
+	^ whereString. 

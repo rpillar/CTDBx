@@ -9,6 +9,5 @@ dbSearchCount: queryParams
 	
 	whereString := self parseSearchQueryParams: queryParams.
 	self queryString: 'select count(*) from ', tableObject dbTableName, ' ', whereString.		
-
-	"execute query ..."	
-	"^ ( self processSearchQuery: queryString ) size."
+		
+	^ ''.

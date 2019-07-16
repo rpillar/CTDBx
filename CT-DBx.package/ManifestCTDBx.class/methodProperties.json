@@ -2,7 +2,11 @@
 	"instance" : { },
 	"class" : {
 		"ruleRBStringConcatenationRuleV1FalsePositive" : "RichardPillar 3/2/2019 11:35",
-		"ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive" : "RichardPillar 3/2/2019 11:35",
-		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 3/2/2019 11:35"
+		"ruleRBAssignmentInIfTrueRuleV1FalsePositive" : "RichardPillar 7/15/2019 23:17",
+		"ruleReDeadMethodV1FalsePositive" : "RichardPillar 7/16/2019 22:30",
+		"ruleRBJustSendsSuperRuleV1FalsePositive" : "RichardPillar 7/16/2019 22:30",
+		"ruleRBLongMethodsRuleV1FalsePositive" : "RichardPillar 7/15/2019 15:49",
+		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 7/14/2019 21:10",
+		"ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive" : "RichardPillar 7/16/2019 22:30"
 	}
 }

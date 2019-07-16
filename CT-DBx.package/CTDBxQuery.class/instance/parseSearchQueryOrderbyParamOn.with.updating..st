@@ -1,11 +1,11 @@
 initialization
-parseSearchQueryOrderbyParamOn: e with: key updating: queryString
+parseSearchQueryOrderbyParamOn: e with: key updating: whereString
 
 	( ( e value first ) = #orderby ) ifTrue: [ 
-		queryString nextPutAll: ' order by ';
+		whereString nextPutAll: ' order by ';
 		nextPutAll: key;
 		space;
 		nextPutAll: e value second asString.
 	].
 
-	^ queryString. 
+	^ whereString. 

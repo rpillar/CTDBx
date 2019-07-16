@@ -1,17 +1,17 @@
 initialization
-parseSearchQueryOrParamOn: e with: key updating: queryString
+parseSearchQueryOrParamOn: e with: key updating: whereString
 
 	| a1 |
 	( ( e value first ) = #or ) ifTrue: [ 
 		a1 := ( e value ) allButFirst.
-		queryString nextPut: $(.
+		whereString nextPut: $(.
 		a1 do: [ :x | 
-			queryString nextPutAll: key; 
+			whereString nextPutAll: key; 
 			nextPut: $=; 
 			nextPutAll: ( x surroundedBySingleQuotes ) 
 		]
 		separatedBy: [ queryString nextPutAll: ' or ' ].
-		queryString nextPut: $).
+		whereString nextPut: $).
 	].
 
-	^ queryString. 
+	^ whereString. 

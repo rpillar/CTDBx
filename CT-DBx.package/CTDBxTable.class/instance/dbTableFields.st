@@ -1,3 +1,3 @@
 accessing
-dbTableRelations
+dbTableFields
 	self subclassResponsibility.

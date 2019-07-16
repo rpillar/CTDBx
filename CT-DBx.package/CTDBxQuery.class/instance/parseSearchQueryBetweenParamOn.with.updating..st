@@ -1,8 +1,8 @@
 initialization
-parseSearchQueryBetweenParamOn: e with: key updating: queryString
+parseSearchQueryBetweenParamOn: e with: key updating: whereString
 
 	( ( e value first ) = #between ) ifTrue: [
-		queryString space;
+		whereString space;
 			nextPutAll: key;
 			space;
 			nextPutAll: ' between ';
@@ -12,4 +12,4 @@ parseSearchQueryBetweenParamOn: e with: key updating: queryString
 			nextPutAll: ( ( e value ) at: 3 ).
 		].
 
-	^ queryString. 
+	^ whereString. 

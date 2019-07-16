@@ -1,4 +1,4 @@
 accessing
-dbFields
+dbTableFields
 
 	^ #( 'departmentid' 'departmentname' ).

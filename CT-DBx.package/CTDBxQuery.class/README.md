@@ -11,7 +11,7 @@ or - a more complicated example :-
 	. { #name -> #( #orderby desc ) } 
 }
 
-and populates the variable 'aQueryString'. with something like :-
+and populates the variable 'queryString'. with something like :-
 
 select name, address, age from customer  where  name='Richard' and  age='21';
 

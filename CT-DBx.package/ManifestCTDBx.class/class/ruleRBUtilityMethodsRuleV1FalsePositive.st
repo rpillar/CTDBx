@@ -1,3 +1,3 @@
 code-critics
 ruleRBUtilityMethodsRuleV1FalsePositive
-	^ #(#(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryParams: #false)) #'2018-07-21T21:11:09.639041+01:00') )
+	^ #(#(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryParams: #false)) #'2018-07-21T21:11:09.639041+01:00') #(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryLikeParamOn:with:updating: #false)) #'2019-07-14T21:10:24.399957+01:00') #(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryBetweenParamOn:with:updating: #false)) #'2019-07-14T21:10:46.364443+01:00') #(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryOrderbyParamOn:with:updating: #false)) #'2019-07-14T21:10:54.539485+01:00') )

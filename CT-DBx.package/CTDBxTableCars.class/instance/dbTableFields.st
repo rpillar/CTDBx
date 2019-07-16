@@ -1,4 +1,4 @@
 accessing
-dbFields
+dbTableFields
 
 	^ #( 'model' 'year' ).
