@@ -10,7 +10,7 @@ parseSearchQueryOrParamOn: e with: key updating: whereString
 			nextPut: $=; 
 			nextPutAll: ( x surroundedBySingleQuotes ) 
 		]
-		separatedBy: [ queryString nextPutAll: ' or ' ].
+		separatedBy: [ whereString nextPutAll: ' or ' ].
 		whereString nextPut: $).
 	].
 

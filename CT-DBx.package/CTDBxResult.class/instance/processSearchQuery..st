@@ -1,13 +1,15 @@
-as yet unclassified
+process actions
 processSearchQuery: queryString
+	
+	"returns a set of results - rows - as an OrderedCollection of dictionaries."
 	
 	| dataRow dataset |
 	
 	dataset := OrderedCollection new.
 	dataset := ( self conn dbConnection execute: queryString ) rows collect: [ :r |  		
 		dataRow := Dictionary new.				
-		self dbFields do: [ :field |
-				dataRow at: field asSymbol put: ( r at: field )  
+		r data keysDo: [ :field |
+				dataRow at: field put: ( r at: field )  
 			].				
 			dataRow.
 		].

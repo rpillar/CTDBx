@@ -1,15 +1,13 @@
 accessing - data
 dbSearchAll
 
-	| tableObject |
+	"get _all_ rows from the specified table - be careful."
+	| tableFields tableObject |
 		
 	"create the required table object"
 	tableObject := ( Smalltalk at: (self queryTable ) asSymbol ) new.
+	
+	"create the _fields_ portion of the query"
+	tableFields := self helperCreateQueryFieldsString: tableObject.
 		
-	self queryString: 'select * from ', tableObject dbTableName, ';'.		
-
-	"execute query ..."	
-	"self dbResultset: ( self processSearchQuery: queryString )."
-
-	"store first (if not nil) in dbResult."
-	"( (self dbResultset at: 1 ) notNil ) ifTrue: [ self dbResult: ( self dbResultset at: 1 ) ]. "
+	self queryString: 'select ' , tableFields , ' from ' , tableObject dbTableName, ';'.

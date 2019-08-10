@@ -1,0 +1,4 @@
+accessing
+dbTableFields
+
+	^ #( 'firstname' 'lastname' ).

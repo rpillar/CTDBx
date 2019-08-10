@@ -2,13 +2,14 @@ accessing - data
 dbSearch: queryParams
 
 	"retrieve ALL data that matches the key / values supplied."
-	| tableObject whereString |
+	| tableFields tableObject whereString |
 
 	"create the required table object"
 	tableObject := ( Smalltalk at: (self queryTable ) asSymbol ) new.
 	
+	"create the _fields_ portion of the query"
+	tableFields := self helperCreateQueryFieldsString: tableObject.
+	
 	"parse the query{arams to create the queryString - and store."
 	whereString := self parseSearchQueryParams: queryParams.
-	self queryString: 'select * from ', tableObject dbTableName, ' ', whereString.		
-
-	^''.
+	self queryString: 'select ' , tableFields ,  ' from ', tableObject dbTableName, ' ', whereString.		

@@ -1,14 +1,14 @@
 accessing - data
 dbCreate: aDataDict
 
-	| fieldsString queryString valuesString |
+	| fieldsString tableObject valuesString |
+	
+	"create the required table object"
+	tableObject := ( Smalltalk at: (self queryTable ) asSymbol ) new.
 	
 	"create the fields portion of the query"
-	fieldsString := self helperCreateFieldsString.
+	fieldsString := self helperCreateInsertFieldsString: tableObject.
 
 	"create the values portion of the query"
 	valuesString := self helperCreateValuesString: aDataDict.
-	queryString := 'insert into ', self dbTableName, ' ', fieldsString, ' values ', valuesString.
-
-	"execute query ..."
-	"self conn dbConnection execute: ( queryString, ';' )."
+	self queryString: 'insert into ', tableObject dbTableName, ' ', fieldsString, ' values ', valuesString.

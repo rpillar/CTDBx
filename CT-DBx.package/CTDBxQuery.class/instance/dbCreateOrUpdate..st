@@ -1,21 +1,24 @@
 accessing - data
 dbCreateOrUpdate: aDataDict
 
-	| fieldsString queryString updateCheck updateString valuesString |
-	
+	| fieldsString primaryKeyValue tableObject updateCheck updateString valuesString |
+
+	"create the required table object"
+	tableObject := ( Smalltalk at: ( ( self queryTable ) asSymbol ) ) new.
+		
 	"create the fields portion of the query"
-	fieldsString := self helperCreateFieldsString.
+	fieldsString := self helperCreateInsertFieldsString: tableObject.
 
 	"Does this data already exist - primary key."
-	updateCheck := self helperCheckForExistance: ( aDataDict at: self dbTablePrimaryKey ).
+	primaryKeyValue := aDataDict at: tableObject dbTablePrimaryKey.
+	
+	updateCheck := self helperCheckForExistance: primaryKeyValue on: tableObject.
 	( updateCheck ) 
 		ifTrue: [ 
 			updateString := self helperCreateUpdateString: aDataDict. 
-			queryString := 'update ', self dbTableName, updateString, ' where ', self dbTablePrimaryKey, '=', ( aDataDict at: self dbTablePrimaryKey ) surroundedBySingleQuotes.  
+			self queryString: 'update ', tableObject dbTableName, updateString, ' where ', self dbTablePrimaryKey, '=', primaryKeyValue surroundedBySingleQuotes.  
 		]
 		ifFalse: [ 
 			valuesString := self helperCreateValuesString: aDataDict.
-			queryString := 'insert into ', self dbTableName, ' ', fieldsString, ' values ', valuesString. ].
-
-	"execute query ..."
-	"self conn dbConnection execute: ( queryString, ';' )."
+			self queryString: 'insert into ', self dbTableName, ' ', fieldsString, ' values ', valuesString. 
+		].

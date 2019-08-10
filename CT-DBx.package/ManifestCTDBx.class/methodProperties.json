@@ -4,9 +4,10 @@
 		"ruleRBStringConcatenationRuleV1FalsePositive" : "RichardPillar 3/2/2019 11:35",
 		"ruleRBAssignmentInIfTrueRuleV1FalsePositive" : "RichardPillar 7/15/2019 23:17",
 		"ruleReDeadMethodV1FalsePositive" : "RichardPillar 7/16/2019 22:30",
+		"ruleRBSelfSentNotImplementedRuleV1FalsePositive" : "RichardPillar 8/9/2019 11:45",
 		"ruleRBJustSendsSuperRuleV1FalsePositive" : "RichardPillar 7/16/2019 22:30",
 		"ruleRBLongMethodsRuleV1FalsePositive" : "RichardPillar 7/15/2019 15:49",
-		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 7/14/2019 21:10",
+		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 8/10/2019 22:18",
 		"ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive" : "RichardPillar 7/16/2019 22:30"
 	}
 }

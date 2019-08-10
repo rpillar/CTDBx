@@ -1,7 +1,14 @@
 {
 	"instance" : {
-		"processSearchQuery:" : "RichardPillar 11/19/2018 22:52",
-		"processSearchQuery:with:" : "RichardPillar 11/19/2018 22:53"
+		"conn:" : "RichardPillar 8/9/2019 12:33",
+		"result:" : "RichardPillar 8/9/2019 12:33",
+		"result" : "RichardPillar 8/9/2019 12:33",
+		"initialize" : "RichardPillar 8/9/2019 12:35",
+		"query:" : "RichardPillar 8/9/2019 12:33",
+		"conn" : "RichardPillar 8/9/2019 12:33",
+		"processSearchQuery:with:" : "RichardPillar 11/19/2018 22:53",
+		"processSearchQuery:" : "RichardPillar 8/9/2019 13:05",
+		"query" : "RichardPillar 8/9/2019 12:33"
 	},
 	"class" : { }
 }
