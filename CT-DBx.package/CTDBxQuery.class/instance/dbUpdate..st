@@ -1,17 +1,20 @@
 accessing - data
 dbUpdate: aDataDict
 
-	| queryString updateString |
+	| tableObject updateString |
+	
+	"create the required table object"
+	tableObject := ( Smalltalk at: (self queryTable ) asSymbol ) new.
 	
 	"parse data passed in and build query string"
-	updateString := self helperCreateUpdateString: aDataDict. 
-	queryString := 'update ', 
-		self dbTableName, updateString, 
+	updateString := self helperCreateUpdateString: aDataDict on: tableObject. 
+	self queryString: 'update ', 
+		( tableObject dbTableName ) , updateString, 
 		' where ', 
-		self dbTablePrimaryKey, 
+		( tableObject dbTablePrimaryKey ) , 
 		'=', 
-		( aDataDict at: self dbTablePrimaryKey ) 
+		( aDataDict at: tableObject dbTablePrimaryKey ) 
 		surroundedBySingleQuotes. 
 
 	"execute query ..."
-	self conn dbConnection execute: queryString.
+	"self conn dbConnection execute: queryString."
