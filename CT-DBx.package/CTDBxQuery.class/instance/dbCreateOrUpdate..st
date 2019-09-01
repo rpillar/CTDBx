@@ -1,7 +1,7 @@
 accessing - data
 dbCreateOrUpdate: aDataDict
 
-	"this method is in the wrong place ...."
+	"this method is in the wrong place - maybe ...."
 	| fieldsString primaryKeyValue tableObject updateCheck updateString valuesString |
 
 	"create the required table object"
@@ -13,7 +13,7 @@ dbCreateOrUpdate: aDataDict
 	"Does this data already exist - primary key."
 	primaryKeyValue := aDataDict at: tableObject dbTablePrimaryKey.
 	
-	updateCheck := self helperCheckForExistance: primaryKeyValue on: tableObject.
+	updateCheck := self helperCheckForExistence: primaryKeyValue on: tableObject.
 	( updateCheck ) 
 		ifTrue: [ 
 			updateString := self helperCreateUpdateString: aDataDict. 

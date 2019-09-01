@@ -1,0 +1,1 @@
+Test 'departments' table - fields -> 'departmentid' / 'departmentname'

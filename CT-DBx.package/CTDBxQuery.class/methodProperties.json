@@ -1,7 +1,8 @@
 {
 	"instance" : {
-		"helperCreateInsertFieldsString:" : "RichardPillar 8/9/2019 18:51",
+		"parseSearchQueryOrderbyParamOn:with:updating:" : "RichardPillar 7/14/2019 21:09",
 		"dbDelete:" : "RichardPillar 8/9/2019 19:08",
+		"helperCreateInsertFieldsString:" : "RichardPillar 8/9/2019 18:51",
 		"queryString" : "RichardaPillar 3/31/2019 22:49",
 		"initialize" : "RichardPillar 10/16/2018 23:01",
 		"dbSearch:" : "RichardPillar 8/9/2019 14:48",
@@ -16,14 +17,14 @@
 		"dbCreate:" : "RichardPillar 8/9/2019 19:02",
 		"dbSearchFirst:" : "RichardPillar 7/15/2019 15:29",
 		"dbUpdate:" : "RichardPillar 8/10/2019 22:45",
-		"helperCheckForExistance:on:" : "RichardPillar 8/9/2019 11:41",
 		"helperCreateValuesString:" : "RichardPillar 7/21/2018 20:58",
 		"queryTable:" : "RichardaPillar 3/31/2019 22:50",
 		"parseSearchQueryBetweenParamOn:with:updating:" : "RichardPillar 7/14/2019 21:10",
-		"dbCreateOrUpdate:" : "RichardPillar 8/10/2019 22:49",
+		"dbCreateOrUpdate:" : "RichardPillar 8/30/2019 14:07",
+		"queryTableObject" : "RichardPillar 8/30/2019 16:37",
 		"queryString:" : "RichardaPillar 3/31/2019 22:49",
 		"helperCreateQueryFieldsString:" : "RichardPillar 8/9/2019 14:48",
-		"parseSearchQueryOrderbyParamOn:with:updating:" : "RichardPillar 7/14/2019 21:09"
+		"helperCheckForExistence:on:" : "RichardPillar 8/30/2019 14:06"
 	},
 	"class" : { }
 }

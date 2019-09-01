@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
+	"commentStamp" : "RichardPillar 9/1/2019 17:39",
+	"super" : "CTDBxTable",
 	"category" : "CT-DBx",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CTDBxTableRow",
+	"name" : "CTDBxTableIncome",
 	"type" : "normal"
 }

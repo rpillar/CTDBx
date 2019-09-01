@@ -1,1 +1,1 @@
-A CTDBxResult represents (in its table subclass) a single instance of that 'thing' - a 'row'.
+A CTDBxResult is the 'thing' that executes the querystring created by CTDBxQuery. Returns an OrderedCollection containing a set of dictionary 'data' objects.

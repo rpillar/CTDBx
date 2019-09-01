@@ -5,7 +5,7 @@ processSearchQuery: queryString with: fields
 	
 	"fields is an array - the fields I want to retrieve."
 	dataset := OrderedCollection new.
-	dataset := ( self conn dbConnection execute: queryString ) rows collect: [ :r |  		
+	dataset := ( self conn execute: queryString ) rows collect: [ :r |  		
 		dataRow := Dictionary new.				
 		fields do: [ :field |
 				dataRow at: field asSymbol put: ( r at: field )  
@@ -13,4 +13,4 @@ processSearchQuery: queryString with: fields
 			dataRow.
 		].
 	
-	^ dataset.
+	self result: dataset.

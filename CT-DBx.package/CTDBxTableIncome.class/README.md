@@ -1,0 +1,1 @@
+Test 'summary' table - fields -> Date / Takings / Donations / Total / Day / Week / Month / Year / CustNumbers

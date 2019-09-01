@@ -5,10 +5,10 @@
 		"ruleRBAssignmentInIfTrueRuleV1FalsePositive" : "RichardPillar 7/15/2019 23:17",
 		"ruleReDeadMethodV1FalsePositive" : "RichardPillar 7/16/2019 22:30",
 		"ruleRBSelfSentNotImplementedRuleV1FalsePositive" : "RichardPillar 8/9/2019 11:45",
-		"ruleRBJustSendsSuperRuleV1FalsePositive" : "RichardPillar 7/16/2019 22:30",
+		"ruleRBJustSendsSuperRuleV1FalsePositive" : "RichardPillar 8/19/2019 23:29",
 		"ruleRBLongMethodsRuleV1FalsePositive" : "RichardPillar 7/15/2019 15:49",
 		"ruleRBClassNotReferencedRuleV1FalsePositive" : "RichardPillar 8/10/2019 22:48",
-		"ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive" : "RichardPillar 7/16/2019 22:30",
+		"ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive" : "RichardPillar 8/19/2019 23:29",
 		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 8/10/2019 22:44"
 	}
 }

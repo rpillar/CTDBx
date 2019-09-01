@@ -6,7 +6,7 @@ processSearchQuery: queryString
 	| dataRow dataset |
 	
 	dataset := OrderedCollection new.
-	dataset := ( self conn dbConnection execute: queryString ) rows collect: [ :r |  		
+	dataset := ( self conn execute: queryString ) rows collect: [ :r | 		
 		dataRow := Dictionary new.				
 		r data keysDo: [ :field |
 				dataRow at: field put: ( r at: field )  
@@ -14,4 +14,4 @@ processSearchQuery: queryString
 			dataRow.
 		].
 	
-	^ dataset.
+	self result: dataset.
