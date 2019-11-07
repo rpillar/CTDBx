@@ -1,0 +1,3 @@
+code-critics
+ruleGRUsesCurlyBraceArraysRuleV1FalsePositive
+	^ #(#(#(#RGMethodDefinition #(#CTDBxTableSchemaCars #createTableFields #false)) #'2019-10-07T20:56:16.878736+01:00') #(#(#RGMethodDefinition #(#CTDBxTableSchemaCars #createTableRelations #false)) #'2019-10-07T22:28:15.439305+01:00') #(#(#RGMethodDefinition #(#CTDBxTableSchemaCars #tableFields #false)) #'2019-11-07T18:48:27.793554+00:00') #(#(#RGMethodDefinition #(#CTDBxTableSchemaCars #tableRelations #false)) #'2019-11-07T19:20:22.114333+00:00') )

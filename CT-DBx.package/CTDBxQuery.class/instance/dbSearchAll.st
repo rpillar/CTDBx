@@ -10,4 +10,4 @@ dbSearchAll
 	"create the _fields_ portion of the query"
 	tableFields := self helperCreateQueryFieldsString: tableObject.
 		
-	self queryString: 'select ' , tableFields , ' from ' , tableObject dbTableName, ';'.
+	self queryString: 'select ' , tableFields , ' from ' , tableObject tableName, ';'.

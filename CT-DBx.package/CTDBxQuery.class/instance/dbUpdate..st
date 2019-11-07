@@ -15,6 +15,3 @@ dbUpdate: aDataDict
 		'=', 
 		( aDataDict at: tableObject dbTablePrimaryKey ) 
 		surroundedBySingleQuotes. 
-
-	"execute query ..."
-	"self conn dbConnection execute: queryString."

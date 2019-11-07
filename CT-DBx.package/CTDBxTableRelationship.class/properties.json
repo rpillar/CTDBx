@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "RichardPillar 10/7/2019 23:08",
+	"super" : "Object",
+	"category" : "CT-DBx",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"field",
+		"table",
+		"matchedOn"
+	],
+	"name" : "CTDBxTableRelationship",
+	"type" : "normal"
+}

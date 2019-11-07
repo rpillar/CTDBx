@@ -5,8 +5,8 @@ helperCreateQueryFieldsString: tableObject
 	
 	"create the fields portion of the query"
 	fieldsString := WriteStream on: String new. 
-	( tableObject dbTableFields ) do: [ :each | 
-			fieldsString nextPutAll: each 
+	( tableObject tableFields ) do: [ :each | 
+			fieldsString nextPutAll: each name 
 		] 
 		separatedBy: [ fieldsString nextPut: $, ].
 	

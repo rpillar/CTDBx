@@ -1,0 +1,4 @@
+initialization
+tableFields
+
+	self subclassResponsibility.

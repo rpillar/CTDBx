@@ -1,4 +1,0 @@
-accessing
-dbTableFields
-
-	^ #( 'model' 'year' ).

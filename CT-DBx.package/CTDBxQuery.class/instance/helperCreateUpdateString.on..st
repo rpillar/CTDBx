@@ -5,7 +5,7 @@ helperCreateUpdateString: aDataDict on: tableObject
 	
 	"create the update portion of the query - Note : primary key field is removed from processing"
 	updateString := WriteStream on: String new. 
-	tableObject dbTableFields 
+	tableObject tableFields 
 		select: [ :each | each ~= tableObject dbTablePrimaryKey ] 
 		thenDo: [ :each | 
 			updateString nextPutAll: ' set ';

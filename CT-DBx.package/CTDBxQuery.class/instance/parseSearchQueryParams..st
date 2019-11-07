@@ -1,7 +1,7 @@
 processing
 parseSearchQueryParams: queryParams
 
-	| k whereString| 
+	| k whereString | 
 	"receive query params as an array of associations - parse into a query string and return. 
 	  Processing of more complex queries will be added ..."
 
@@ -16,7 +16,7 @@ parseSearchQueryParams: queryParams
 				ifTrue: [
 					whereString := self parseSearchQueryOrParamOn: e with: k updating: whereString. 
 					whereString := self parseSearchQueryLikeParamOn: e with: k  updating: whereString.
-					whereString :=self parseSearchQueryBetweenParamOn: e with: k  updating: whereString.
+					whereString := self parseSearchQueryBetweenParamOn: e with: k  updating: whereString.
 				]
 				ifFalse: [  
 					whereString space;
