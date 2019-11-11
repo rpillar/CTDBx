@@ -1,0 +1,1 @@
+I represent the 'cars' database table.

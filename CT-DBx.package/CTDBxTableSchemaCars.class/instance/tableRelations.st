@@ -1,11 +1,11 @@
-initialization
+under deprecation
 tableRelations
 
 	| relationDefinition tableRelation |
 	
 	relationDefinition := { 
-		{ #table->'Performance' . #field->'name' . #matchedOn->'model' } asDictionary.
-	}.
+		'performance' -> { #table->'Performance' . #field->'name' . #matchedOn->'model' } asDictionary.
+	} asDictionary.
 	
 	^ relationDefinition collect: [ :relationship | 
 		tableRelation := CTDBxTableRelationship new. 

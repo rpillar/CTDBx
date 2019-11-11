@@ -7,8 +7,12 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"conn",
+		"fields",
+		"primaryKey",
 		"query",
-		"result"
+		"resultset",
+		"rsPointer",
+		"tableName"
 	],
 	"name" : "CTDBxResult",
 	"type" : "normal"

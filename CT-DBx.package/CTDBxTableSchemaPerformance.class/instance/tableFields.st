@@ -1,0 +1,4 @@
+initialization
+tableFields
+
+	^ #( 'name' 'speed' ).

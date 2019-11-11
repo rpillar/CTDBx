@@ -1,6 +1,8 @@
 accessing - data
 dbSearch: queryParams
 
+	"queryParams - in the form of -> { { #year -> 13 } }"
+
 	"retrieve ALL data that matches the key / values supplied."
 	| tableFields tableObject whereString |
 
@@ -12,4 +14,4 @@ dbSearch: queryParams
 	
 	"parse the query{arams to create the queryString - and store."
 	whereString := self parseSearchQueryParams: queryParams.
-	self queryString: 'select ' , tableFields ,  ' from ', tableObject dbTableName, ' ', whereString.		
+	self queryString: 'select ' , tableFields ,  ' from ', tableObject tableName, ' ', whereString.		

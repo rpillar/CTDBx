@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "RichardPillar 11/11/2019 11:27",
+	"super" : "CTDBxResult",
+	"category" : "CT-DBx",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"speed"
+	],
+	"name" : "CTDBxResultTablePerformance",
+	"type" : "normal"
+}

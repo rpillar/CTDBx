@@ -1,8 +1,9 @@
 {
 	"instance" : {
-		"initialize" : "RichardPillar 11/7/2019 19:02",
-		"tableFields" : "RichardPillar 11/7/2019 18:43",
-		"tableRelations" : "RichardPillar 11/7/2019 18:43"
+		"initialize" : "RichardPillar 11/9/2019 19:58",
+		"relationPerformance:" : "RichardPillar 11/9/2019 21:51",
+		"tableFields" : "RichardPillar 11/9/2019 21:55",
+		"tableRelations" : "RichardPillar 11/10/2019 20:50"
 	},
 	"class" : { }
 }

@@ -4,6 +4,7 @@ parseSearchQueryParams: queryParams
 	| k whereString | 
 	"receive query params as an array of associations - parse into a query string and return. 
 	  Processing of more complex queries will be added ..."
+	"the queryParams will (in its simplest form be an association - { { #year -> 13 } } - for example."
 
 	whereString := WriteStream on: String new . 
 	whereString nextPutAll: ' where '.

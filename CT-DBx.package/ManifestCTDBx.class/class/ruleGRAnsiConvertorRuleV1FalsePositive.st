@@ -1,3 +1,3 @@
 code-critics
 ruleGRAnsiConvertorRuleV1FalsePositive
-	^ #(#(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryParams: #false)) #'2019-10-07T20:47:47.577006+01:00') #(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryLimitParamOn:updating: #false)) #'2019-11-07T19:19:07.2735+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryOrderbyParamOn:with:updating: #false)) #'2019-11-07T19:21:44.282105+00:00') )
+	^ #(#(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryParams: #false)) #'2019-10-07T20:47:47.577006+01:00') #(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryLimitParamOn:updating: #false)) #'2019-11-07T19:19:07.2735+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryOrderbyParamOn:with:updating: #false)) #'2019-11-07T19:21:44.282105+00:00') #(#(#RGMethodDefinition #(#CTDBxResult #processSearchQuery: #false)) #'2019-11-10T21:55:50.170208+00:00') )

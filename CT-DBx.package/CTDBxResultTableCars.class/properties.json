@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "RichardPillar 11/10/2019 20:38",
+	"super" : "CTDBxResult",
+	"category" : "CT-DBx",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"manufacturer",
+		"model",
+		"year",
+		"type"
+	],
+	"name" : "CTDBxResultTableCars",
+	"type" : "normal"
+}

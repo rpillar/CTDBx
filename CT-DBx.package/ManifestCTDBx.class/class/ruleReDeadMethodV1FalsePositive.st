@@ -1,3 +1,3 @@
 code-critics
 ruleReDeadMethodV1FalsePositive
-	^ #(#(#(#RGMethodDefinition #(#CTDBxTableCars #dbTableFields #false)) #'2019-07-16T22:30:35.565091+01:00') )
+	^ #(#(#(#RGMethodDefinition #(#CTDBxTableCars #dbTableFields #false)) #'2019-07-16T22:30:35.565091+01:00') #(#(#RGMethodDefinition #(#CTDBxResult #schema: #false)) #'2019-11-07T21:22:41.930834+00:00') #(#(#RGMethodDefinition #(#CTDBxResult #schema #false)) #'2019-11-07T21:22:47.334769+00:00') )

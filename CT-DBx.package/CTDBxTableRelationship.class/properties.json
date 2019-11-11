@@ -7,8 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"field",
-		"table",
-		"matchedOn"
+		"matchedOn",
+		"query",
+		"table"
 	],
 	"name" : "CTDBxTableRelationship",
 	"type" : "normal"
