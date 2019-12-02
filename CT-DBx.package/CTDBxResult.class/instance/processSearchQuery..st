@@ -20,6 +20,3 @@ processSearchQuery: queryString
 		dataRow.
 	].
 	
-	"store data thats returned."
-	"self resultset: dataset."
-	
