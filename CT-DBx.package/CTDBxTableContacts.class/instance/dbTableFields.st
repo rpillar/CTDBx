@@ -1,4 +1,0 @@
-accessing
-dbTableFields
-
-	^ #( 'firstname' 'lastname' ).

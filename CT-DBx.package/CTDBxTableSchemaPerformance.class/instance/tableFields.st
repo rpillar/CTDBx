@@ -1,4 +1,0 @@
-initialization
-tableFields
-
-	^ #( 'name' 'speed' ).

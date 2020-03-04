@@ -1,4 +1,0 @@
-initialization
-tableFields
-
-	self subclassResponsibility.

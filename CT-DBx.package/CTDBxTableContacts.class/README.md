@@ -1,1 +1,0 @@
-Test 'contacts' table - fields -> 'firstname' / 'lastname'

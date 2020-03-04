@@ -1,3 +1,0 @@
-accessing
-dbTableFields
-	self subclassResponsibility.

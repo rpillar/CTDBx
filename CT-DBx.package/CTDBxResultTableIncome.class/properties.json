@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "RichardPillar 12/9/2019 21:51",
+	"super" : "CTDBxResult",
+	"category" : "CT-DBx",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"Date",
+		"Takings",
+		"Donations",
+		"Total",
+		"Day",
+		"Week",
+		"Month",
+		"Year",
+		"CustNumbers"
+	],
+	"name" : "CTDBxResultTableIncome",
+	"type" : "normal"
+}

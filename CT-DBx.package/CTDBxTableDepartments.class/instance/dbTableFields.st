@@ -1,4 +1,0 @@
-accessing
-dbTableFields
-
-	^ #( 'departmentid' 'departmentname' ).
