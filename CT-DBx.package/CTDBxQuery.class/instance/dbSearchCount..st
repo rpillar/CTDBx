@@ -8,6 +8,6 @@ dbSearchCount: queryParams
 	tableObject := ( Smalltalk at: (self queryTable ) asSymbol ) new.
 	
 	whereString := self parseSearchQueryParams: queryParams.
-	self queryString: 'select count(*) from ', tableObject dbTableName, ' ', whereString.		
+	self queryString: 'select count(*) from ', tableObject tableName, ' ', whereString.		
 		
 	^ ''.

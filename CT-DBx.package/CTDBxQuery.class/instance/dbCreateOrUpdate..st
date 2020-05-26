@@ -11,15 +11,15 @@ dbCreateOrUpdate: aDataDict
 	fieldsString := self helperCreateInsertFieldsString: tableObject.
 
 	"Does this data already exist - primary key."
-	primaryKeyValue := aDataDict at: tableObject dbTablePrimaryKey.
+	primaryKeyValue := aDataDict at: tableObject primaryKey.
 	
 	updateCheck := self helperCheckForExistence: primaryKeyValue on: tableObject.
 	( updateCheck ) 
 		ifTrue: [ 
-			updateString := self helperCreateUpdateString: aDataDict. 
-			self queryString: 'update ', tableObject dbTableName, updateString, ' where ', self dbTablePrimaryKey, '=', primaryKeyValue surroundedBySingleQuotes.  
+			updateString := self helperCreateUpdateString: aDataDict on: tableObject. 
+			self queryString: 'update ', tableObject tableName, updateString, ' where ', self primaryKey, '=', primaryKeyValue surroundedBySingleQuotes.  
 		]
 		ifFalse: [ 
-			valuesString := self helperCreateValuesString: aDataDict.
-			self queryString: 'insert into ', self dbTableName, ' ', fieldsString, ' values ', valuesString. 
+			valuesString := self helperCreateValuesString: aDataDict on: tableObject.
+			self queryString: 'insert into ', self tableName, ' ', fieldsString, ' values ', valuesString. 
 		].

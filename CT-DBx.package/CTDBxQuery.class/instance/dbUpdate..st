@@ -9,9 +9,9 @@ dbUpdate: aDataDict
 	"parse data passed in and build query string"
 	updateString := self helperCreateUpdateString: aDataDict on: tableObject. 
 	self queryString: 'update ', 
-		( tableObject dbTableName ) , updateString, 
+		( tableObject tableName ) , updateString, 
 		' where ', 
-		( tableObject dbTablePrimaryKey ) , 
+		( tableObject primaryKey ) , 
 		'=', 
-		( aDataDict at: tableObject dbTablePrimaryKey ) 
+		( aDataDict at: tableObject primaryKey ) 
 		surroundedBySingleQuotes. 

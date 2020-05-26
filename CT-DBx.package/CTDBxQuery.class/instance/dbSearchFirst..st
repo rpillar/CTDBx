@@ -8,4 +8,4 @@ dbSearchFirst: queryParams
 	tableObject := ( Smalltalk at: (self queryTable ) asSymbol ) new.
 	
 	whereString := self parseSearchQueryParams: queryParams.
-	self queryString: 'select * from ', tableObject dbTableName, ' ', whereString, ' LIMIT 1'.	
+	self queryString: 'select * from ', tableObject tableName, ' ', whereString, ' LIMIT 1'.	

@@ -10,5 +10,5 @@ dbCreate: aDataDict
 	fieldsString := self helperCreateInsertFieldsString: tableObject.
 
 	"create the values portion of the query"
-	valuesString := self helperCreateValuesString: aDataDict.
-	self queryString: 'insert into ', tableObject dbTableName, ' ', fieldsString, ' values ', valuesString.
+	valuesString := self helperCreateValuesString: aDataDict on: tableObject.
+	self queryString: 'insert into ', tableObject tableName, ' ', fieldsString, ' values ', valuesString.

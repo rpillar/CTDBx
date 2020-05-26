@@ -7,4 +7,4 @@ dbDelete: aDataDict
 	"create the required table object"
 	tableObject := ( Smalltalk at: (self queryTable ) asSymbol ) new.
 	
-	self queryString: 'delete from ', tableObject dbTableName, ' where ', tableObject dbTablePrimaryKey, '=', ( aDataDict at: tableObject dbTablePrimaryKey ) surroundedBySingleQuotes. 
+	self queryString: 'delete from ', tableObject tableName, ' where ', tableObject primaryKey, '=', ( aDataDict at: tableObject primaryKey ) surroundedBySingleQuotes. 

@@ -1,23 +1,26 @@
 {
 	"instance" : { },
 	"class" : {
-		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 11/9/2019 21:24",
-		"ruleReDeadMethodV1FalsePositive" : "RichardPillar 12/2/2019 17:36",
-		"ruleGRParensFormattingRuleV1FalsePositive" : "RichardPillar 12/2/2019 17:49",
-		"ruleRBBadMessageRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32",
-		"ruleGRInstanceVariableCapitalizationRuleV1FalsePositive" : "RichardPillar 12/9/2019 21:50",
-		"ruleGRAnsiConvertorRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32",
-		"ruleRBGuardingClauseRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32",
 		"ruleRBSelfSentNotImplementedRuleV1FalsePositive" : "RichardPillar 8/9/2019 11:45",
-		"ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32",
-		"ruleGRAnsiCollectionsRuleV1FalsePositive" : "RichardPillar 11/7/2019 18:55",
 		"ruleGRUsesCurlyBraceArraysRuleV1FalsePositive" : "RichardPillar 11/10/2019 20:35",
-		"ruleGRTemporaryNeitherReadNorWrittenRuleV1FalsePositive" : "RichardPillar 11/10/2019 21:52",
-		"ruleRBJustSendsSuperRuleV1FalsePositive" : "RichardPillar 11/10/2019 20:30",
+		"ruleGRParensFormattingRuleV1FalsePositive" : "RichardPillar 3/25/2020 23:13",
+		"ruleRBLongMethodsRuleV1FalsePositive" : "RichardPillar 7/15/2019 15:49",
+		"ruleGRAnsiConvertorRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32",
+		"ruleReDeadMethodV1FalsePositive" : "RichardPillar 12/2/2019 17:36",
 		"ruleRBClassNotReferencedRuleV1FalsePositive" : "RichardPillar 8/10/2019 22:48",
+		"ruleGRGuardClauseRuleV1FalsePositive" : "RichardPillar 3/25/2020 22:54",
+		"ruleGRTemporaryNeitherReadNorWrittenRuleV1FalsePositive" : "RichardPillar 11/10/2019 21:52",
+		"ruleGRAnsiCollectionsRuleV1FalsePositive" : "RichardPillar 11/7/2019 18:55",
+		"ruleRBGlobalVariablesUsageV1FalsePositive" : "RichardPillar 3/25/2020 23:16",
 		"ruleGRGuradGuardClauseRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:33",
+		"ruleRBImplementedNotSentRuleV1FalsePositive" : "RichardPillar 3/25/2020 23:18",
+		"ruleGRInstanceVariableCapitalizationRuleV1FalsePositive" : "RichardPillar 12/9/2019 21:50",
 		"ruleRBAssignmentInIfTrueRuleV1FalsePositive" : "RichardPillar 7/15/2019 23:17",
+		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 3/25/2020 23:10",
 		"ruleRBStringConcatenationRuleV1FalsePositive" : "RichardPillar 3/2/2019 11:35",
-		"ruleRBLongMethodsRuleV1FalsePositive" : "RichardPillar 7/15/2019 15:49"
+		"ruleRBJustSendsSuperRuleV1FalsePositive" : "RichardPillar 3/25/2020 23:19",
+		"ruleRBGuardingClauseRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32",
+		"ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32",
+		"ruleRBBadMessageRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:32"
 	}
 }
