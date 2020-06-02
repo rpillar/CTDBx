@@ -1,16 +1,16 @@
 helper
-helperCreateInsertFieldsString: tableObject
+helperCreateInsertFieldsString: aDataDict
 	
 	| fieldsString |
 	
-	"create the fields portion of the query"
+	"create the fields portion of the query - from the supplied dictionary"
 	fieldsString := WriteStream on: String new. 
 	fieldsString nextPut: $(.
-	( tableObject fields ) do: [ :each | 
+	( aDataDict keys ) do: [ :each | 
 			fieldsString nextPutAll: each 
 		] 
 		separatedBy: [ fieldsString nextPut: $, ].
 		
 	fieldsString nextPut: $).
-	
+
 	^ fieldsString contents.

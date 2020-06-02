@@ -1,5 +1,5 @@
 helper
-helperCreateValuesString: aDataDict on: tableObject
+helperCreateValuesString: aDataDict
 	
 	| valuesString |
 	
@@ -7,7 +7,13 @@ helperCreateValuesString: aDataDict on: tableObject
 	valuesString := WriteStream on: String new.
 	valuesString nextPut: $(.
 	aDataDict keys do: [ :each |
-		valuesString nextPutAll: ( aDataDict at: ( each asSymbol ) ) surroundedBySingleQuotes 
+		( ( aDataDict at: each ) isInteger ) 
+			ifTrue: [  
+				valuesString nextPutAll: ( ( aDataDict at: each ) asString )
+			]
+			ifFalse: [
+				valuesString nextPutAll: ( aDataDict at: each ) surroundedBySingleQuotes 
+			]
 	] 
 	separatedBy: [ valuesString nextPut: $, ].
 		
