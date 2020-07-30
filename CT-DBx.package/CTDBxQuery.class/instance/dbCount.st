@@ -7,4 +7,4 @@ dbCount
 	"create the required table object"
 	tableObject := ( Smalltalk at: ( self queryTable ) asSymbol ) new.
 	
-	self queryString: 'select count(*) from ', tableObject tableName.		
+	self queryString: 'select count(*) from ', tableObject tableName, ';'.		
