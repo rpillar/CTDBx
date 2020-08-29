@@ -13,12 +13,8 @@ dbDelete: aDataDict
 		nextPutAll: tableObject tableName;
 		space;
 		nextPutAll: 'where';
-		space;
-		nextPutAll: tableObject primaryKey;
-		nextPut: $=.
-
-	( ( aDataDict at: tableObject primaryKey ) isInteger )
-		ifTrue: [ query nextPutAll: ( ( aDataDict at: ( ( tableObject primaryKey ) asSymbol ) ) asString ) ]
-		ifFalse: [ query nextPutAll: ( aDataDict at: ( tableObject primaryKey ) asSymbol ) surroundedBySingleQuotes ].
-		
+		space.
+self halt.	
+	query := self helperProcessPrimaryKeys: tableObject primaryKey on: query with: aDataDict.
+self halt.		
 	self queryString: query contents.

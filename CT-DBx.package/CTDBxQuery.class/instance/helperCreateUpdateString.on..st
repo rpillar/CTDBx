@@ -8,12 +8,13 @@ helperCreateUpdateString: aDataDict on: tableObject
 	updateString nextPutAll: ' set';
 		space.
 	
-	tableObject fields 
-		select: [ :each | each ~= tableObject primaryKey ] 
+	"tableObject fields"
+	aDataDict keys 
+		select: [ :each | each asString ~= tableObject primaryKey ] 
 		thenDo: [ :each |
-			updateString nextPutAll: each;
+			updateString nextPutAll: each asString;
 			nextPut:  $=;
-			nextPutAll: ( aDataDict at: ( each asSymbol ) ) surroundedBySingleQuotes;
+			nextPutAll: ( ( aDataDict at: each ) surroundedBy: $" asString );
 			nextPut: $,
 		].
 	

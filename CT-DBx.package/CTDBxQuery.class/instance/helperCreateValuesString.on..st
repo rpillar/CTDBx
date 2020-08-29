@@ -7,7 +7,7 @@ helperCreateValuesString: aDataDict on: tableObject
 	valuesString := WriteStream on: String new.
 	valuesString nextPut: $(.
 	aDataDict keys do: [ :each |
-		valuesString nextPutAll: ( aDataDict at: ( each asSymbol ) ) surroundedBySingleQuotes 
+		valuesString nextPutAll: ( ( aDataDict at: ( each asSymbol ) ) surroundedBy: $" asString ) 
 	] 
 	separatedBy: [ valuesString nextPut: $, ].
 		
