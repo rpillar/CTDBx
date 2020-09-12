@@ -14,7 +14,7 @@ dbDelete: aDataDict
 		space;
 		nextPutAll: 'where';
 		space.
-self halt.	
+
 	query := self helperProcessPrimaryKeys: tableObject primaryKey on: query with: aDataDict.
-self halt.		
+		
 	self queryString: query contents.

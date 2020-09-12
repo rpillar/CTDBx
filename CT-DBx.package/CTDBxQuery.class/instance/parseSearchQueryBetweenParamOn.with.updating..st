@@ -8,7 +8,9 @@ parseSearchQueryBetweenParamOn: e with: key updating: whereString
 			nextPutAll: ' between ';
 			space; 
 			nextPutAll: ( ( e value ) at: 2 );
+			space;
 			nextPutAll: 'and ';
+			space;
 			nextPutAll: ( ( e value ) at: 3 ).
 		].
 

@@ -16,16 +16,8 @@ dbUpdate: aDataDict
 		space;
 		nextPutAll: updateString;
 		nextPutAll: 'where';
-		space;
-		nextPutAll: ( tableObject primaryKey );
-		nextPut: $=.
+		space.
 		
-	( ( ( aDataDict at: ( tableObject primaryKey ) ) isInteger ) 
-		ifTrue: [  
-			query nextPutAll: ( ( aDataDict at: tableObject primaryKey ) asString ).
-		]
-		ifFalse: [
-			query nextPutAll: ( ( aDataDict at: tableObject primaryKey ) surroundedBySingleQuotes )
-		] ).
+	query := self helperProcessPrimaryKeys: tableObject primaryKey on: query with: aDataDict.
 	
 	self queryString: query contents.

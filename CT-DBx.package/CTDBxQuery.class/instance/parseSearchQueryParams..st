@@ -3,7 +3,8 @@ parseSearchQueryParams: queryParams
 
 	| k whereString | 
 	"receive query params as an array of associations - parse into a query string and return. 
-	  Processing of more complex queries will be added ..."
+	 Processing of more complex queries will be added ..."
+	
 	"the queryParams will (in its simplest form be an association - { { #year -> 13 } } - for example."
 
 	whereString := WriteStream on: String new . 
@@ -13,8 +14,11 @@ parseSearchQueryParams: queryParams
 	( queryParams at: 1 ) do: [ :e |
 		( e class = Association ) ifTrue: [
 			k := e key asString.
+
 			( e value class = Array )
 				ifTrue: [
+					whereString := self parseSearchQueryComparisonParamOn: e with: k updating: whereString. 
+					
 					whereString := self parseSearchQueryOrParamOn: e with: k updating: whereString. 
 					whereString := self parseSearchQueryLikeParamOn: e with: k  updating: whereString.
 					whereString := self parseSearchQueryBetweenParamOn: e with: k  updating: whereString.
@@ -22,7 +26,9 @@ parseSearchQueryParams: queryParams
 				ifFalse: [  
 					whereString space;
 						nextPutAll: k; 
+						space;
 						nextPut: $=;
+						space;
 						nextPutAll: ( ( e value asString ) surroundedBySingleQuotes ).
 				]
 		]		 
