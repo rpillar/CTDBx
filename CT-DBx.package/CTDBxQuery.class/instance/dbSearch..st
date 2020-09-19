@@ -1,7 +1,7 @@
 accessing - data
 dbSearch: queryParams
 
-	"queryParams - in the form of -> { { #year -> 13 } }"
+	"generic 'select * from <table> where ....' - queryParams - in the form of -> { { #year -> 13 } }"
 
 	"retrieve ALL data that matches the key / values supplied."
 	| tableFields tableObject whereString |

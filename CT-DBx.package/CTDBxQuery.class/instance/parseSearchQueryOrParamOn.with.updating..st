@@ -1,6 +1,7 @@
 initialization
 parseSearchQueryOrParamOn: e with: key updating: whereString
 
+	"process the 'or' portion of the query string"
 	| a1 |
 	( ( e value first ) = #or ) ifTrue: [ 
 		a1 := ( e value ) allButFirst.
@@ -8,7 +9,7 @@ parseSearchQueryOrParamOn: e with: key updating: whereString
 		a1 do: [ :x | 
 			whereString nextPutAll: key; 
 			nextPut: $=; 
-			nextPutAll: ( x surroundedBySingleQuotes ) 
+			nextPutAll: ( self parseSearchQueryParamFormat: x )
 		]
 		separatedBy: [ whereString nextPutAll: ' or ' ].
 		whereString nextPut: $).

@@ -1,6 +1,7 @@
 initialization
 parseSearchQueryLikeParamOn: e with: key updating: whereString
 
+	"process the 'like' portion of the query string"
 	( ( e value first ) = #like ) ifTrue: [
 		whereString space;
 			nextPutAll: key;

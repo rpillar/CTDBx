@@ -6,7 +6,6 @@ helperProcessPrimaryKeys: keys on: query with: data
 			query nextPutAll: key;
 				nextPut: $=.
 			self helperProcessPrimaryKeyData: key on: query with: data.
-			"query nextPutAll: ' and '."
 		]
 		separatedBy: [ query nextPutAll: ' and ' ].
 	]

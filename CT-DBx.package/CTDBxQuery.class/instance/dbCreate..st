@@ -1,6 +1,7 @@
 accessing - data
 dbCreate: aDataDict
 
+	"create an 'insert query string for the specified table"
 	| fieldsString tableObject valuesString |
 	
 	"create the required table object"

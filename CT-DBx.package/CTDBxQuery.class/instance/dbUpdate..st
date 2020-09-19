@@ -1,6 +1,7 @@
 accessing - data
 dbUpdate: aDataDict
 
+	"create an update query string for the specified table"
 	| query tableObject updateString |
 	
 	"create the required table object"

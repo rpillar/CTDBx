@@ -1,12 +1,13 @@
 initialization
 parseSearchQueryComparisonParamOn: e with: key updating: whereString
 
+	"process the comparison portion of the query string"
 	( ( e value first ) = #gt ) ifTrue: [ 
 		whereString nextPutAll: key; 
 			space;
 			nextPut: $>; 
 			space;
-			nextPutAll: ( ( e value second ) surroundedBySingleQuotes ) 
+			nextPutAll: ( self parseSearchQueryParamFormat: ( e value second ) ) 
 	].
 
 	( ( e value first ) = #lt ) ifTrue: [ 
@@ -14,7 +15,7 @@ parseSearchQueryComparisonParamOn: e with: key updating: whereString
 			space;
 			nextPut: $<; 
 			space;
-			nextPutAll: ( ( e value second ) surroundedBySingleQuotes ) 
+			nextPutAll: ( self parseSearchQueryParamFormat: ( e value second ) )
 	].
 
 	( ( e value first ) = #ne ) ifTrue: [ 
@@ -23,7 +24,7 @@ parseSearchQueryComparisonParamOn: e with: key updating: whereString
 			nextPut: $!;
 			nextPut: $=; 
 			space;
-			nextPutAll: ( ( e value second ) surroundedBySingleQuotes ) 
+			nextPutAll: ( self parseSearchQueryParamFormat: ( e value second ) )
 	].
 
 	^ whereString. 

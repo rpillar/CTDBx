@@ -1,7 +1,7 @@
 process actions
 processSearchQuery: queryString
 	
-	"returns a set of results - rows - as an OrderedCollection of dictionaries."
+	"returns a set of results - rows - as an OrderedCollection of dictionaries on the basis of the supplied querystring."
 	| dataCount dataRow dataset |
 	
 	dataCount := 1.

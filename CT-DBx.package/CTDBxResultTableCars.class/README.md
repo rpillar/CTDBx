@@ -1,1 +1,1 @@
-I represent the 'cars' database table.
+Example - I represent the 'cars' database table.
