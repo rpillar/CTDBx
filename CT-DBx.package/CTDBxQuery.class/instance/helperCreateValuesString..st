@@ -12,7 +12,7 @@ helperCreateValuesString: aDataDict
 				valuesString nextPutAll: ( ( aDataDict at: each ) asString )
 			]
 			ifFalse: [
-				valuesString nextPutAll: ( ( aDataDict at: each ) surroundedBy: $" asString ) 
+				valuesString nextPutAll: ( ( ( aDataDict at: each ) asString ) surroundedBy: $" asString ) 
 			]
 	] 
 	separatedBy: [ valuesString nextPut: $, ].
