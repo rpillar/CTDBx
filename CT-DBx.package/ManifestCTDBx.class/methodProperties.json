@@ -15,7 +15,7 @@
 		"ruleRBGlobalVariablesUsageV1FalsePositive" : "RichardPillar 3/25/2020 23:16",
 		"ruleGRGuradGuardClauseRuleV1FalsePositive" : "RichardPillar 12/2/2019 18:33",
 		"ruleRBEndTrueFalseRuleV1FalsePositive" : "RichardPillar 8/29/2020 14:48",
-		"ruleRBImplementedNotSentRuleV1FalsePositive" : "RichardPillar 9/12/2020 21:23",
+		"ruleRBImplementedNotSentRuleV1FalsePositive" : "RichardPillar 11/15/2020 10:06",
 		"ruleGRInstanceVariableCapitalizationRuleV1FalsePositive" : "RichardPillar 12/9/2019 21:50",
 		"ruleRBAssignmentInIfTrueRuleV1FalsePositive" : "RichardPillar 7/15/2019 23:17",
 		"ruleRBUtilityMethodsRuleV1FalsePositive" : "RichardPillar 9/12/2020 21:23",
