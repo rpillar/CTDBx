@@ -1,0 +1,3 @@
+code-critics
+ruleUtilityMethodsRuleV1FalsePositive
+	^ #(#(#(#RGMethodDefinition #(#CTDBxQuery #parseSearchQueryParamFormat: #false)) #'2022-11-05T18:58:47.484641+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #helperCreateQueryFieldsString: #false)) #'2022-11-05T19:02:37.191095+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #helperCreateValuesString: #false)) #'2022-11-05T19:03:53.982037+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #helperCreateValuesString:on: #false)) #'2022-11-05T19:05:21.41958+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #helperProcessPrimaryKeyData:on:with: #false)) #'2022-11-05T19:05:35.193626+00:00') )

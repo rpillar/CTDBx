@@ -3,7 +3,7 @@ helperCreateValuesString: aDataDict on: tableObject
 	
 	| valuesString |
 	
-	"create the values portion of the query"
+	"create the values portion of the query - do I need this !!! "
 	valuesString := WriteStream on: String new.
 	valuesString nextPut: $(.
 	aDataDict keys do: [ :each |
