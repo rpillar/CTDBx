@@ -12,6 +12,6 @@ dbSearch: queryParams
 	"create the _fields_ portion of the query"
 	tableFields := self helperCreateQueryFieldsString: tableObject.
 	
-	"parse the query{arams to create the queryString - and store."
+	"parse the query params to create the queryString - and store."
 	whereString := self parseSearchQueryParams: queryParams.
 	self queryString: 'select ' , tableFields ,  ' from ', tableObject tableName, ' ', whereString.		
