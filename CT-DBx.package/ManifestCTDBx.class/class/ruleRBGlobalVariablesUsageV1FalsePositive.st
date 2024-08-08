@@ -1,3 +1,0 @@
-code-critics
-ruleRBGlobalVariablesUsageV1FalsePositive
-	^ #(#(#(#RGMethodDefinition #(#CTDBxQuery #queryTableObject #false)) #'2020-03-25T23:02:22.299021+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #dbCreate: #false)) #'2020-03-25T23:12:19.152543+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #dbCreateOrUpdate: #false)) #'2020-03-25T23:15:34.323143+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #dbDelete: #false)) #'2020-03-25T23:16:19.726659+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #dbSearch: #false)) #'2020-03-25T23:16:33.52288+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #dbSearchAll #false)) #'2020-03-25T23:16:43.721022+00:00') #(#(#RGClassDefinition #(#CTDBxQuery)) #'2020-03-25T23:16:54.573257+00:00') )

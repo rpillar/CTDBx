@@ -1,3 +1,0 @@
-code-critics
-ruleRBUnaryAccessingMethodWithoutReturnRuleV1FalsePositive
-	^ #(#(#(#RGMethodDefinition #(#CTDBxQuery #dbSearchAll #false)) #'2018-08-01T07:59:46.3854+01:00') #(#(#RGMethodDefinition #(#CTDBxTableCars #initialize #false)) #'2019-07-16T22:30:11.408927+01:00') #(#(#RGMethodDefinition #(#CTDBxTableDepartments #initialize #false)) #'2019-08-19T23:29:54.744365+01:00') #(#(#RGMethodDefinition #(#CTDBxResultTableCars #rPerformance #false)) #'2019-11-10T20:36:03.402009+00:00') #(#(#RGMethodDefinition #(#CTDBxResult #next #false)) #'2019-12-02T18:32:38.000187+00:00') #(#(#RGMethodDefinition #(#CTDBxQuery #dbCount #false)) #'2020-06-02T20:34:55.512291+01:00') )
