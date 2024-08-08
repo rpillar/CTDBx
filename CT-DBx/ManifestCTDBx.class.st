@@ -4,8 +4,9 @@ I store metadata for this package. These meta data are used by other tools such 
 Class {
 	#name : 'ManifestCTDBx',
 	#superclass : 'PackageManifest',
-	#category : 'CT-DBx',
-	#package : 'CT-DBx'
+	#category : 'CT-DBx-Manifest',
+	#package : 'CT-DBx',
+	#tag : 'Manifest'
 }
 
 { #category : 'code-critics' }

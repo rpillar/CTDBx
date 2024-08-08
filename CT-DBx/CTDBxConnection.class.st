@@ -7,8 +7,9 @@ Class {
 	#instVars : [
 		'dbConnection'
 	],
-	#category : 'CT-DBx',
-	#package : 'CT-DBx'
+	#category : 'CT-DBx-Base',
+	#package : 'CT-DBx',
+	#tag : 'Base'
 }
 
 { #category : 'accessing' }
