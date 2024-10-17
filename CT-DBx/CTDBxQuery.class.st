@@ -1,9 +1,17 @@
 "
-Base class for database tables - provides a standard set of methods.
+Base class for database table queries - provides a standard set of methods.
+
+The _query_ assumes that a `CTDBxResult` subclass exists for the appropriate table. These classes effectively define the structure of the table being queried. 
 
 Takes a query in the form of a set of Associations - for example :-
 ```
-{ { #name -> 'Richard' . #age -> 21 } }
+q := CTDBxQuery new.
+q queryTable: 'Employee'.
+q dbSearch: { { #name -> 'Richard' . #age -> 21 } }.
+```
+This will might result in a `querystring` of :-
+```
+select name, age, location, title from employee where name = 'Richard' and age 21;
 ```
 or - a more complicated example :-
 ```
